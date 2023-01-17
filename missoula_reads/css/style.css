@@ -1,0 +1,256 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, p{
+    text-align: center;
+    padding-top: 1em;
+}
+
+.check-container {
+    height: 800px;
+    width: 968px;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 150%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow: 20px 20px 40px rgba(4, 98, 90, 0.25);
+    display: grid;
+    place-items: center;
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }
+  .profile-container {
+    height: 400px;
+    width: 500px;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 30%;
+    border-radius: 8px;
+    box-shadow: 20px 20px 40px rgba(4, 98, 90, 0.25);
+    display: grid;
+    place-items: center;
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }
+
+  /* This is code for the progress circle*/
+  .container {
+    height: 400px;
+    width: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 75%;
+    border-radius: 8px;
+    box-shadow: 20px 20px 40px rgba(4, 98, 90, 0.25);
+    display: grid;
+    place-items: center;
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }
+
+.circular-progress {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.value-container {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  color: #04625a;
+}
+
+/*This is code for the animated checkboxes*/
+.box_4{
+	background: #eee;
+}
+
+.input_wrapper{
+  width: 80px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.input_wrapper input[type="checkbox"]{
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #d93fb1;
+  border-radius: 2px;
+  position: relative;
+  outline: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.input_wrapper input[type="checkbox"]:after{
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 3px;
+  width: 34px;
+  height: 34px;
+  background: #dfeaec;
+  z-index: 2;
+  border-radius: 2px;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.input_wrapper svg{
+  position: absolute;
+  top: 50%;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  fill: #fff;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+  z-index: 1;
+}
+
+.input_wrapper .is_checked{
+  width: 18px;
+  left: 18%;
+  -webkit-transform: translateX(190%) translateY(-30%) scale(0);
+          transform: translateX(190%) translateY(-30%) scale(0);
+}
+
+.input_wrapper .is_unchecked{
+  width: 15px;
+  right: 10%;
+  -webkit-transform: translateX(0) translateY(-30%) scale(1);
+          transform: translateX(0) translateY(-30%) scale(1);
+}
+
+/* Checked State */
+.input_wrapper input[type="checkbox"]:checked{
+  background: #07A89B;
+}
+
+.input_wrapper input[type="checkbox"]:checked:after{
+  left: calc(100% - 37px);
+}
+
+.input_wrapper input[type="checkbox"]:checked + .is_checked{
+  -webkit-transform: translateX(0) translateY(-30%) scale(1);
+          transform: translateX(0) translateY(-30%) scale(1);
+}
+
+.input_wrapper input[type="checkbox"]:checked ~ .is_unchecked{
+  -webkit-transform: translateX(-190%) translateY(-30%) scale(0);
+          transform: translateX(-190%) translateY(-30%) scale(0);
+}
+
+/*this is for the book info trackers*/
+.bookInfoTracker{
+    width: 20em;
+    height: 8em;
+    border: solid  gray 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+div.input_wrapper{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    margin-top: .5em;
+}
+
+label{
+    grid-column-start: 3;
+    grid-column-end: 7;
+    font-size: large;
+    padding-top: .5em;
+    margin-top: .5em;
+}
+
+.starRating{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: .5em;
+    margin-left: .5em;
+}
+
+.pageNumbers{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding-left: .5em;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    margin-right: .5em;
+    height: 2em;
+}
+
+.bookTitle{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: .5em;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    height: 2em;
+}
+
+.bookAuthor{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    padding-left: .5em;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+/*Code for the star rating section*/
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.starFill {
+    color: #07A89B;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}

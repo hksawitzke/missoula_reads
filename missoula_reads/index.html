@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missoula Reads</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <h1>missoula reads<br></h1>
+    <p class="instructions">Can you read 50 books from as many categories in 2023?</p>
+
+    <div class="profile-container">
+        <h2>Badges</h2>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="progressCircle">Progress Toward Goal</h2>
+        <div class="circular-progress">
+        <div class="value-container">0%</div>
+        </div>
+    </div>
+    
+    <div class="check-container">
+        <h2>Book Categories</h2>
+        <!--<button onclick="checkboxToggle()">Book Categories</button>-->
+        <div class="bookInfoTracker">
+            <div class="input_wrapper">
+				<input type="checkbox" id="category1" class="switch_4">
+				<svg class="is_checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426.67 426.67">
+			        <path d="M153.504 366.84c-8.657 0-17.323-3.303-23.927-9.912L9.914 237.265c-13.218-13.218-13.218-34.645 0-47.863 13.218-13.218 34.645-13.218 47.863 0l95.727 95.727 215.39-215.387c13.218-13.214 34.65-13.218 47.86 0 13.22 13.218 13.22 34.65 0 47.863L177.435 356.928c-6.61 6.605-15.27 9.91-23.932 9.91z"/>
+			    </svg>
+				<svg class="is_unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.982 212.982">
+			        <path d="M131.804 106.49l75.936-75.935c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.49 81.18 30.555 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.99 6.99-6.99 18.323 0 25.312L81.18 106.49 5.24 182.427c-6.99 6.99-6.99 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0L106.49 131.8l75.938 75.937c6.99 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.323 0-25.313l-75.936-75.936z" fill-rule="evenodd" clip-rule="evenodd"/>
+			    </svg>
+			</div>
+            <label for="category1">200 Pages or Fewer</label>
+            <input type="text" class="bookTitle" placeholder="Title of Book">
+            <input type="text" class="bookAuthor" placeholder="Name of Author">
+            <div class="starRating">
+                <span onclick="starRating1()" class="material-symbols-outlined star1" id="star1">star</span>
+                <span onclick="starRating2()" class="material-symbols-outlined star2" id="star2">star</span>
+                <span onclick="starRating3()" class="material-symbols-outlined star3" id="star3">star</span>
+                <span onclick="starRating4()" class="material-symbols-outlined star4" id="star4">star</span>
+                <span onclick="starRating5()" class="material-symbols-outlined star5" id="star5">star</span>
+            </div>
+            <input type="text" class="pageNumbers" placeholder="# of Pages">
+        </div>
+        <div class="bookInfoTracker">
+            <div class="input_wrapper">
+				<input type="checkbox" id="category1" class="switch_4">
+				<svg class="is_checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426.67 426.67">
+			        <path d="M153.504 366.84c-8.657 0-17.323-3.303-23.927-9.912L9.914 237.265c-13.218-13.218-13.218-34.645 0-47.863 13.218-13.218 34.645-13.218 47.863 0l95.727 95.727 215.39-215.387c13.218-13.214 34.65-13.218 47.86 0 13.22 13.218 13.22 34.65 0 47.863L177.435 356.928c-6.61 6.605-15.27 9.91-23.932 9.91z"/>
+			    </svg>
+				<svg class="is_unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.982 212.982">
+			        <path d="M131.804 106.49l75.936-75.935c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.49 81.18 30.555 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.99 6.99-6.99 18.323 0 25.312L81.18 106.49 5.24 182.427c-6.99 6.99-6.99 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0L106.49 131.8l75.938 75.937c6.99 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.323 0-25.313l-75.936-75.936z" fill-rule="evenodd" clip-rule="evenodd"/>
+			    </svg>
+			</div>
+            <label for="category1">400 Pages or More</label>
+            <input type="text" class="bookTitle" placeholder="Title of Book">
+            <input type="text" class="bookAuthor" placeholder="Name of Author">
+            <div class="starRating">
+                <span onclick="starRating1()" class="material-symbols-outlined star1" id="star1.2">star</span>
+                <span onclick="starRating2()" class="material-symbols-outlined star2" id="star2.2">star</span>
+                <span onclick="starRating3()" class="material-symbols-outlined star3" id="star3.2">star</span>
+                <span onclick="starRating4()" class="material-symbols-outlined star4" id="star4.2">star</span>
+                <span onclick="starRating5()" class="material-symbols-outlined star5" id="star5.2">star</span>
+            </div>
+            <input type="text" class="pageNumbers" placeholder="# of Pages">
+        </div>
+        <div class="switch_box box_4" id="checkboxes">
+            <!--
+			<div class="input_wrapper">
+				<input type="checkbox" id="category1" class="switch_4">
+				<svg class="is_checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426.67 426.67">
+			  <path d="M153.504 366.84c-8.657 0-17.323-3.303-23.927-9.912L9.914 237.265c-13.218-13.218-13.218-34.645 0-47.863 13.218-13.218 34.645-13.218 47.863 0l95.727 95.727 215.39-215.387c13.218-13.214 34.65-13.218 47.86 0 13.22 13.218 13.22 34.65 0 47.863L177.435 356.928c-6.61 6.605-15.27 9.91-23.932 9.91z"/>
+			</svg>
+				<svg class="is_unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.982 212.982">
+			  <path d="M131.804 106.49l75.936-75.935c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.49 81.18 30.555 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.99 6.99-6.99 18.323 0 25.312L81.18 106.49 5.24 182.427c-6.99 6.99-6.99 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0L106.49 131.8l75.938 75.937c6.99 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.323 0-25.313l-75.936-75.936z" fill-rule="evenodd" clip-rule="evenodd"/>
+			</svg>
+            <label for="category1">200 Pages or Fewer</label>
+			  </div>
+              -->
+        </div>
+    </div>
+
+</body>
+</html>
