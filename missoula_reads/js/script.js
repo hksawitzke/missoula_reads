@@ -19,7 +19,7 @@ let progress = setInterval(() => {
   }
 }, speed);
 
-//this is for spawning the book information checkboxes dynamically
+//this is for spawning the book information checkboxes dynamically -- It isn't functioning yet as I want to make sure I have the rest of the code correct first
 
 var bookCategory = ["200 Pages or fewer", "2022 Montana Book Award Nominee", "400 Pages or More", "About a Real Person", "Anthology or Collection", "Any ebook, any audiobook, or re-read an old favorite", "Art or Craft", "Author Shares Your Zodiac Sign", "Author Used a Pen Name", "Author's Last Name Starts with a Vowel", "Author's Photo on the Back Cover", "Blue Cover", "Book from a Series", "Book You Abandoned in the Past", "Business, Entrepreneurship or Marketing", "Civil Rights", "Classic You've Been Avoiding", "Community Read: The Cold Millions", "Country in the Title", "Current Event", "Food", "Genre-bending", "Job Title in the Title", "Leaves on the Cover", "Lots of Photos", "Made into a Movie/Show", "Magic Realism", "Mark Twain", "Mindfulness", "Published in 2023", "Question in this Title", "Read it For the Title", "Recently Challenged", "Recently-deceased Author", "Revenge", "Science Fiction", "Seasonal", "Set During a War", "Set in a Place You'd Like to Visit", "Sppoky", "Sports", "Steamy", "Takes Place in a Foreign Country", "Three Words in the Title", "Transportation", "Travel Guide", "Weather", "Western", "Written by a Josephine Miles Award Winner", "Young Adult Fiction"]
 
